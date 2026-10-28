@@ -3803,12 +3803,12 @@ textarea:focus {
 }
 
 /* ==========================================================================
-   SERVICES SHOWCASE (2 in a Row with Images & Professional Look)
+   SERVICES SHOWCASE (3 in a Row with Images & Professional Look)
    ========================================================================== */
 .services-showcase-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 36px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
 }
 
 .service-showcase-card {
@@ -3819,6 +3819,7 @@ textarea:focus {
   box-shadow: 0 6px 24px rgba(7, 19, 31, 0.05);
   display: flex;
   flex-direction: column;
+  height: 100%;
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -3831,7 +3832,7 @@ textarea:focus {
 .service-card-media {
   position: relative;
   width: 100%;
-  height: 230px;
+  height: 200px;
   overflow: hidden;
   background-color: var(--primary-blue);
 }
@@ -3849,8 +3850,8 @@ textarea:focus {
 
 .service-badge-pill {
   position: absolute;
-  top: 16px;
-  left: 16px;
+  top: 14px;
+  left: 14px;
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -3862,42 +3863,42 @@ textarea:focus {
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.16em;
-  padding: 4px 12px;
+  letter-spacing: 0.14em;
+  padding: 4px 10px;
   border-radius: 20px;
   z-index: 2;
 }
 
 .service-card-body {
-  padding: 28px 30px 32px;
+  padding: 24px 22px 26px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
 .service-card-body h3 {
-  font-size: 22px !important;
+  font-size: 19px !important;
   font-weight: 600;
   color: var(--primary-blue);
   margin-bottom: 6px;
-  line-height: 1.3;
+  line-height: 1.32;
 }
 
 .service-card-subtitle {
-  font-size: 13px;
+  font-size: 11.5px;
   font-weight: 600;
   color: var(--gold-dark);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 14px;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
   display: block;
 }
 
 .service-card-body p {
-  font-size: 14px;
+  font-size: 13.5px;
   color: var(--text-body);
-  line-height: 1.65;
-  margin-bottom: 20px;
+  line-height: 1.6;
+  margin-bottom: 18px;
 }
 
 .service-support-box {
@@ -3905,25 +3906,25 @@ textarea:focus {
   border: 1px solid rgba(212, 175, 55, 0.25);
   border-left: 3px solid var(--gold);
   border-radius: 6px;
-  padding: 18px 20px;
-  margin-bottom: 0;
-  flex-grow: 1;
+  padding: 14px 16px;
+  margin-top: auto;
+  flex-grow: 0;
 }
 
 .service-support-heading {
   font-size: 11px !important;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   color: var(--primary-blue);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .service-support-list {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
+  gap: 8px;
   padding: 0;
   margin: 0;
 }
@@ -3931,17 +3932,17 @@ textarea:focus {
 .service-support-list li {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
-  font-size: 13px;
+  gap: 8px;
+  font-size: 12.5px;
   color: var(--text-body);
-  line-height: 1.55;
+  line-height: 1.5;
 }
 
 .service-support-list li i,
 .service-support-list li svg,
 .service-check-bullet {
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
   color: var(--gold);
   flex-shrink: 0;
   margin-top: 2px;
@@ -3953,6 +3954,7 @@ textarea:focus {
 /* ==========================================================================
    PROJECTS SHOWCASE (Alternating Left/Right Layout)
    Even no project has image on the left, odd no project has image on the right
+   Both have identical 5:7 column ratio and identical image dimensions
    ========================================================================== */
 .project-card-item {
   background-color: var(--white);
@@ -3973,22 +3975,23 @@ textarea:focus {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 0;
-  align-items: center;
+  align-items: stretch;
 }
 
 .project-media-col {
-  aspect-ratio: 16 / 11;
-  background-color: var(--primary-blue);
   position: relative;
   overflow: hidden;
+  background-color: var(--primary-blue);
+  width: 100%;
   height: 100%;
-  min-height: 280px;
+  min-height: 340px;
 }
 
 .project-media-col img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
   transition: transform 0.6s ease;
 }
 
@@ -3998,46 +4001,56 @@ textarea:focus {
 
 .project-content-col {
   padding: 40px 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-/* Odd projects (1, 3): Image on RIGHT, Text on LEFT */
-.project-card-item.image-right .project-media-col {
-  grid-column: span 5;
-  order: 2;
-}
-
+/* Odd projects (1, 3): Text on LEFT (cols 1-7), Image on RIGHT (cols 8-12) */
 .project-card-item.image-right .project-content-col {
-  grid-column: span 7;
-  order: 1;
+  grid-column: 1 / 8;
+  grid-row: 1;
 }
 
-/* Even projects (2, 4): Image on LEFT, Text on RIGHT */
+.project-card-item.image-right .project-media-col {
+  grid-column: 8 / 13;
+  grid-row: 1;
+}
+
+/* Even projects (2, 4): Image on LEFT (cols 1-5), Text on RIGHT (cols 6-12) */
 .project-card-item.image-left .project-media-col {
-  grid-column: span 5;
-  order: 1;
+  grid-column: 1 / 6;
+  grid-row: 1;
 }
 
 .project-card-item.image-left .project-content-col {
-  grid-column: span 7;
-  order: 2;
+  grid-column: 6 / 13;
+  grid-row: 1;
 }
 
 @media (max-width: 992px) {
   .project-grid-row {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
 
   .project-card-item.image-right .project-media-col,
   .project-card-item.image-left .project-media-col {
-    grid-column: span 1;
+    grid-column: auto;
+    grid-row: auto;
     order: 1 !important;
+    width: 100%;
     aspect-ratio: 16 / 10;
-    min-height: auto;
+    min-height: 240px;
+    height: auto;
   }
 
   .project-card-item.image-right .project-content-col,
   .project-card-item.image-left .project-content-col {
-    grid-column: span 1;
+    grid-column: auto;
+    grid-row: auto;
     order: 2 !important;
     padding: 28px 22px;
   }
@@ -4088,12 +4101,14 @@ textarea:focus {
   transform: translateX(3px);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1100px) {
   .services-showcase-grid {
-    grid-template-columns: 1fr;
-    gap: 28px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
   }
+}
 
+@media (max-width: 992px) {
   .philosophy-grid {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -4101,6 +4116,13 @@ textarea:focus {
 
   .methodology-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-showcase-grid {
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 }
