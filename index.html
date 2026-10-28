@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Innspira Hospitality LLP | Strategic Hospitality Advisory &amp; Consulting</title>
+  <meta name="description"
+    content="Innspira Hospitality LLP provides strategic hospitality consulting across market research, hotel development, pre-opening planning and operational improvement in India and international markets.">
+
+  <!-- Favicon from assets/images folder -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Google Fonts: Smooth & Soft Modern Typography (Outfit + Plus Jakarta Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Lucide Icons (Local) -->
+  <script src="js/lucide.min.js"></script>
+
+  <!-- Pure Vanilla Stylesheet (No Tailwind CSS) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Top Utility Bar -->
+  <div class="top-utility-bar">
+    <div class="container top-bar-container">
+      <div class="top-bar-left">
+        <span class="top-bar-link">
+          <span class="top-badge-dot"></span>
+          <span>Hospitality Consulting &amp; Advisory</span>
+        </span>
+        <span class="top-divider">|</span>
+        <span class="top-bar-link">Serving India &amp; International Hospitality Markets</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:+919140299074" class="top-bar-link">
+          <i data-lucide="phone"></i>
+          <span>+91 91402 99074</span>
+        </a>
+        <a href="mailto:info@InnspiraHospitality.com" class="top-bar-link">
+          <i data-lucide="mail"></i>
+          <span>info@InnspiraHospitality.com</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Header (Fixed height, 85px logo, 16px menu, zero vertical padding) -->
+  <header id="main-header" class="site-header">
+    <div class="container header-container">
+      <!-- Logo from assets/images folder (85px height) -->
+      <a href="index.html" class="header-logo-link">
+        <img src="assets/images/logo.png" alt="Innspira Hospitality Logo" class="header-logo">
+      </a>
+
+      <!-- Desktop Navigation (16px text) -->
+      <nav>
+        <ul class="main-nav">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Our Services</a></li>
+          <li><a href="projects.html" class="nav-link">Our Projects</a></li>
+          <li><a href="insights.html" class="nav-link">Insights</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Button & Mobile Hamburger -->
+      <div class="header-actions">
+        <a href="contact.html" class="btn-consult">
+          <span>Request a Consultation</span>
+          <i data-lucide="arrow-right"></i>
+        </a>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle navigation" aria-expanded="false">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="mobile-menu-drawer">
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+        <li><a href="services.html" class="mobile-nav-link">Our Services</a></li>
+        <li><a href="projects.html" class="mobile-nav-link">Our Projects</a></li>
+        <li><a href="insights.html" class="mobile-nav-link">Insights</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
+      </ul>
+      <div class="mobile-drawer-action">
+        <a href="contact.html" class="btn-consult btn-consult-block">
+          Request a Consultation
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ====================================================================
+         SECTION 1: HERO SHOWCASE SLIDER
+         - Background images 100% visible (no opacity reduction)
+         - Minimal text in glassmorphic card
+         - Positioned left and slightly down
+         ==================================================================== -->
+    <section id="hero-slider" class="hero-slider-section" aria-label="Hero Showcase Slider">
+
+      <!-- Slide 1: Grand Hotel Lobby Blueprint Review -->
+      <div class="hero-slide active">
+        <img src="assets/images/banner/01.jpg"
+          alt="Hospitality Consultants Reviewing Hotel Architectural Plans in 5-Star Lobby" class="hero-slide-bg">
+        <div class="container hero-container-flex">
+          <div class="hero-glass-card">
+            <span class="hero-tag">Hospitality Advisory</span>
+            <h1 class="hero-title">Strategic Insight for Hospitality Growth</h1>
+            <p class="hero-desc">Independent advisory across hotel development, pre-opening planning, and operational
+              excellence.</p>
+            <div class="hero-btn-row">
+              <a href="services.html" class="btn-hero-primary">
+                <span>Explore Services</span>
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: Hotel Development & Feasibility Boardroom -->
+      <div class="hero-slide">
+        <img src="assets/images/banner/02.jpg"
+          alt="Hospitality Investors and Advisors Evaluating Hotel Development Model" class="hero-slide-bg">
+        <div class="container hero-container-flex">
+          <div class="hero-glass-card">
+            <span class="hero-tag">Feasibility &amp; Capital</span>
+            <h2 class="hero-title">Rigorous Capital Analysis</h2>
+            <p class="hero-desc">Independent market research and commercial concept evaluations safeguarding
+              investments.</p>
+            <div class="hero-btn-row">
+              <a href="services.html#feasibility" class="btn-hero-primary">
+                <span>Advisory Scope</span>
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Luxury Resort Planning Session -->
+      <div class="hero-slide">
+        <img src="assets/images/banner/03.jpg" alt="Senior Consultants Reviewing Luxury Resort Plans and Layouts"
+          class="hero-slide-bg">
+        <div class="container hero-container-flex">
+          <div class="hero-glass-card">
+            <span class="hero-tag">Heritage &amp; Resorts</span>
+            <h2 class="hero-title">Distinguished Destination Assets</h2>
+            <p class="hero-desc">Development planning and structured project coordination for luxury resorts and
+              heritage hotels.</p>
+            <div class="hero-btn-row">
+              <a href="projects.html" class="btn-hero-primary">
+                <span>Our Experience</span>
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4: Interior Architecture & Room Renders -->
+      <div class="hero-slide">
+        <img src="assets/images/banner/04.jpg"
+          alt="Hospitality Pre-Opening Material Selection and Room Architecture Review" class="hero-slide-bg">
+        <div class="container hero-container-flex">
+          <div class="hero-glass-card">
+            <span class="hero-tag">Pre-Opening Readiness</span>
+            <h2 class="hero-title">Flawless Launch Execution</h2>
+            <p class="hero-desc">Structured timelines, FF&amp;E coordination, and readiness audits ensuring seamless
+              hotel launches.</p>
+            <div class="hero-btn-row">
+              <a href="contact.html" class="btn-hero-primary">
+                <span>Connect With Us</span>
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Controls Bottom Right -->
+      <div class="hero-controls">
+        <div class="hero-counter">
+          <span id="slider-current-num">01</span> / 04
+        </div>
+        <div class="hero-indicator-group">
+          <button class="hero-indicator-bar active" aria-label="Go to Slide 1"></button>
+          <button class="hero-indicator-bar" aria-label="Go to Slide 2"></button>
+          <button class="hero-indicator-bar" aria-label="Go to Slide 3"></button>
+          <button class="hero-indicator-bar" aria-label="Go to Slide 4"></button>
+        </div>
+        <div class="hero-controls-arrows">
+          <button id="slider-prev" class="hero-arrow-btn" aria-label="Previous Slide">
+            <i data-lucide="chevron-left"></i>
+          </button>
+          <button id="slider-next" class="hero-arrow-btn" aria-label="Next Slide">
+            <i data-lucide="chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 2: ABOUT THE COMPANY
+         Large left-side image balanced with right-side content
+         ==================================================================== -->
+    <section class="section-padding bg-white">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- Left-Side Image Column -->
+          <div class="about-image-column">
+            <div class="about-image-frame">
+              <img src="assets/images/07.jpg" alt="Innspira Advisory Team in Strategic Hospitality Planning Session">
+              <div class="about-float-badge">
+                <h4>Strategic Coordination &amp; Advisory</h4>
+                <p>Independent advisory aligning commercial rigor with operational realities.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right-Side Content Column -->
+          <div class="about-content-column">
+            <span class="sub-title">About Innspira</span>
+            <h2>Clarity for Better Hospitality Decisions</h2>
+            <p class="about-lead">
+              Innspira Hospitality LLP is a specialised hospitality consulting firm focused on helping hotel owners,
+              investors, and property developers assess opportunities, structure projects, and resolve complex
+              operational challenges.
+            </p>
+            <p class="about-secondary-text">
+              Our advisory approach blends analytical research with a hands-on understanding of hospitality operations.
+              We focus on practical recommendations, structured coordination, and guest-centred operating practices
+              aligned with each property's commercial objectives.
+            </p>
+
+            <div class="about-features-grid">
+              <div class="about-feature-item">
+                <div class="feature-icon-circle">
+                  <i data-lucide="check"></i>
+                </div>
+                <div>
+                  <h4>Owner-Centric Perspective</h4>
+                  <p>Advisory aligned with owner capital protection and long-term asset value.</p>
+                </div>
+              </div>
+
+              <div class="about-feature-item">
+                <div class="feature-icon-circle">
+                  <i data-lucide="check"></i>
+                </div>
+                <div>
+                  <h4>Operational Practicality</h4>
+                  <p>Actionable recommendations grounded in real hotel operating environments.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-action-wrap">
+              <a href="about.html" class="btn-hero-primary">
+                <span>Discover Innspira</span>
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 3: WHAT WE DO (9 Core Capabilities matching WhatWeDo.png)
+         ==================================================================== -->
+    <section class="what-we-do-section" id="what-we-do">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="what-title-wrap">
+          <span class="what-sub-title">What We Do</span>
+          <h2 class="what-heading">Hospitality Advisory Across the Lifecycle</h2>
+          <p class="what-desc">
+            From evaluating a hospitality concept to preparing for opening and improving existing operations, we deliver
+            focused consulting support for key hospitality business decisions.
+          </p>
+        </div>
+
+        <!-- 3x3 Service Cards Grid matching WhatWeDo.png -->
+        <div class="services-grid-3col">
+
+          <!-- Item 1: Hotel Feasibility & Market Research -->
+          <div class="what-we-do-item">
+            <div class="what-we-do-icon-wrap">
+              <i data-lucide="bar-chart-3" class="what-we-do-icon"></i>
+            </div>
+            <h3>Feasibility &amp; Market Research</h3>
+            <p>Evaluate market opportunities, demand drivers, competitor positioning, and hospitality concepts to inform
+              sound investment decisions and capital allocation.</p>
+            <a href="services.html#feasibility" class="service-item-link">
+              <span>Explore Feasibility</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Item 2: Hotel Development Planning & Project Coordination -->
+          <div class="what-we-do-item">
+            <div class="what-we-do-icon-wrap">
+              <i data-lucide="compass" class="what-we-do-icon"></i>
+            </div>
+            <h3>Development Coordination</h3>
+            <p>Support development planning, architectural coordination, operational space allocation, and integration
+              of key priorities from initial blueprint to construction handover.</p>
+            <a href="services.html#development" class="service-item-link">
+              <span>Explore Development</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Item 3: Brand Affiliation, Operator Selection & Franchise Advisory -->
+          <div class="what-we-do-item">
+            <div class="what-we-do-icon-wrap">
+              <i data-lucide="award" class="what-we-do-icon"></i>
+            </div>
+            <h3>Brand Affiliation &amp; Franchising</h3>
+            <p>Assess hotel brand suitability, compare management versus franchise agreements, and guide negotiations
+              with national and international hotel operators.</p>
+            <a href="services.html#brand-affiliation" class="service-item-link">
+              <span>Explore Brand Advisory</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Item 4: Pre-Opening Planning & Operational Readiness -->
+          <div class="what-we-do-item">
+            <div class="what-we-do-icon-wrap">
+              <i data-lucide="calendar-check" class="what-we-do-icon"></i>
+            </div>
+            <h3>Pre-Opening Planning</h3>
+            <p>Organise operational requirements, critical path milestones, department readiness checklists,
+              OS&amp;E/FF&amp;E tracking, and pre-launch team alignment.</p>
+            <a href="services.html#pre-opening" class="service-item-link">
+              <span>Explore Pre-Opening</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Item 5: Hotel Operations Improvement & SOP Development -->
+          <div class="what-we-do-item">
+            <div class="what-we-do-icon-wrap">
+              <i data-lucide="settings" class="what-we-do-icon"></i>
+            </div>
+            <h3>Operations &amp; Service Quality</h3>
+            <p>Review standard operating procedures, departmental coordination, and service delivery standards to
+              identify tangible cost-efficiency and quality enhancements.</p>
+            <a href="services.html#operations" class="service-item-link">
+              <span>Explore Operations</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Item 6: Food & Beverage Concept & Banquet Advisory -->
+          <div class="what-we-do-item">
+            <div class="what-we-do-icon-wrap">
+              <i data-lucide="utensils" class="what-we-do-icon"></i>
+            </div>
+            <h3>F&amp;B and Banqueting</h3>
+            <p>Concept development, kitchen and service space planning, menu engineering coordination, and operational
+              protocols for fine dining, banquets, and event venues.</p>
+            <a href="services.html#food-beverage" class="service-item-link">
+              <span>Explore F&amp;B Advisory</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Item 7: Guest Experience Strategy & Service Audits -->
+          <div class="what-we-do-item">
+            <div class="what-we-do-icon-wrap">
+              <i data-lucide="sparkles" class="what-we-do-icon"></i>
+            </div>
+            <h3>Guest Experience &amp; Audits</h3>
+            <p>Analyze guest journey touchpoints, feedback metrics, and digital sentiment to identify root causes and
+              elevate overall hospitality reputation.</p>
+            <a href="services.html#guest-experience" class="service-item-link">
+              <span>Explore Guest Experience</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Item 8: Concept Notes, Pitch Decks & Management Reports -->
+          <div class="what-we-do-item">
+            <div class="what-we-do-icon-wrap">
+              <i data-lucide="file-text" class="what-we-do-icon"></i>
+            </div>
+            <h3>Business Reports &amp; Strategy</h3>
+            <p>Prepare clear, well-structured concept notes, investor teasers, operational audit reports, and executive
+              presentations for boards and financiers.</p>
+            <a href="services.html#business-reports" class="service-item-link">
+              <span>Explore Strategy Reports</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Item 9: Resort & Heritage Property Advisory -->
+          <div class="what-we-do-item">
+            <div class="what-we-do-icon-wrap">
+              <i data-lucide="landmark" class="what-we-do-icon"></i>
+            </div>
+            <h3>Resort &amp; Heritage Advisory</h3>
+            <p>Specialised advisory for heritage properties, boutique resorts, and destination venues requiring tailored
+              operating models and heritage conservation sensitivity.</p>
+            <a href="services.html" class="service-item-link">
+              <span>Explore Heritage Advisory</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Section Action -->
+        <div class="services-action-bar">
+          <span>Every hospitality project has unique commercial and operational requirements. We tailor each engagement
+            scope.</span>
+          <a href="services.html" class="btn-hero-primary">
+            <span>View Full Service Framework</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 4: SELECTED EXPERIENCE (Matching SelectedExperience.png)
+         ==================================================================== -->
+    <section class="section-padding bg-white">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header-flex">
+          <div class="section-header-left">
+            <span class="sub-title">Selected Experience</span>
+            <h2>Insight Informed by Practical Project Experience</h2>
+            <p class="section-desc">Our advisory draws upon hospitality development, guest experience consulting, hotel
+              operations, and strategic advisory assignments.</p>
+          </div>
+          <a href="projects.html" class="service-item-link section-header-link">
+            <span>Explore All Projects</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- 3-Column Luxury Suite Showcase matching SelectedExperience.png -->
+        <div class="experience-grid">
+
+          <!-- Experience Card 1: Raffles Jakarta -->
+          <div class="experience-card">
+            <div class="experience-thumb">
+              <img src="assets/images/room1.webp" alt="Raffles Jakarta Luxury Hotel Suite Interior">
+              <span class="experience-badge">Guest Experience</span>
+            </div>
+            <div class="experience-content">
+              <span class="exp-location">JAKARTA, INDONESIA</span>
+              <h3>Raffles Jakarta</h3>
+              <p>Academic consulting project associated with the University of New South Wales analyzing luxury guest
+                feedback touchpoints to formulate tangible service-improvement recommendations.</p>
+              <div class="exp-footer">
+                <span class="exp-context">UNSW Consulting Project</span>
+                <a href="projects.html" class="exp-details-link">
+                  <span>Details</span>
+                  <i data-lucide="arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Card 2: The Gauri Hotels & Resorts -->
+          <div class="experience-card">
+            <div class="experience-thumb">
+              <img src="assets/images/room2.webp" alt="The Gauri Hotels and Resorts Luxury Suite">
+              <span class="experience-badge">Development &amp; Operations</span>
+            </div>
+            <div class="experience-content">
+              <span class="exp-location">UTTAR PRADESH &amp; REGIONAL INDIA</span>
+              <h3>The Gauri Hotels &amp; Resorts</h3>
+              <p>Professional experience across a hospitality portfolio including heritage resort assets, branded hotel
+                development coordination, banquet venues, and pre-opening operational planning.</p>
+              <div class="exp-footer">
+                <span class="exp-context">Founder Executive Experience</span>
+                <a href="projects.html" class="exp-details-link">
+                  <span>Details</span>
+                  <i data-lucide="arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Card 3: Taj Palace & Strategic Advisory -->
+          <div class="experience-card">
+            <div class="experience-thumb">
+              <img src="assets/images/room3.webp" alt="Luxury Hospitality Penthouse and Strategy Advisory">
+              <span class="experience-badge">Operations &amp; Strategy</span>
+            </div>
+            <div class="experience-content">
+              <span class="exp-location">NEW DELHI &amp; STRATEGIC ADVISORY</span>
+              <h3>Taj Palace &amp; Strategic Advisory</h3>
+              <p>Operations and departmental service training at the iconic Taj Palace New Delhi, complemented by
+                postgraduate strategy consulting projects for major infrastructure clients (Aurecon &amp; Transgrid).
+              </p>
+              <div class="exp-footer">
+                <span class="exp-context">Luxury Operations &amp; UNSW Project</span>
+                <a href="projects.html" class="exp-details-link">
+                  <span>Details</span>
+                  <i data-lucide="arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 5: CLIENT PROFILES
+         Updated to match Restin "Our Special Offer" Accordion Pattern
+         https://ex-coders.com/html/restin/
+         ==================================================================== -->
+    <section class="client-profiles-section border-top-bottom">
+      <div class="container">
+        <div class="section-title text-center">
+          <span class="sub-title">Client Profiles</span>
+          <h2>Supporting Hospitality Businesses at Every Stage</h2>
+          <p class="section-desc">
+            Every hospitality project has unique commercial objectives, timelines, and operational realities. Our
+            advisory support is customized to each stakeholder context.
+          </p>
+        </div>
+
+        <!-- Restin Style Accordion / Expanding Cards Showcase -->
+        <div class="service-wrapper">
+
+          <!-- Profile 1: Hotel Owners & Independent Operators -->
+          <div class="service-main-item active">
+            <!-- Collapsed card -->
+            <div class="service-item">
+              <div class="service-image">
+                <img src="assets/images/room1.webp" alt="Hotel Owners & Independent Operators">
+              </div>
+              <div class="service-content">
+                <h3><a href="services.html">Hotel Owners &amp; Operators</a></h3>
+                <span class="btn">Explore Profile</span>
+              </div>
+            </div>
+            <!-- Expanded card on hover -->
+            <div class="service-card-item">
+              <div class="services-image">
+                <img src="assets/images/room1.webp" alt="Hotel Owners & Independent Operators">
+                <div class="content">
+                  <h3><a href="services.html">Hotel Owners &amp; Operators</a></h3>
+                  <p>Practical guidance for owners evaluating new opportunities or seeking to upgrade existing hotel
+                    operations, cost structures, and financial performance.</p>
+                  <a href="services.html" class="views-btn">
+                    <span>View Advisory Scope</span>
+                    <i data-lucide="arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Profile 2: Hospitality Investors -->
+          <div class="service-main-item">
+            <!-- Collapsed card -->
+            <div class="service-item">
+              <div class="service-image">
+                <img src="assets/images/room2.webp" alt="Hospitality Investors">
+              </div>
+              <div class="service-content">
+                <h3><a href="services.html#feasibility">Hospitality Investors</a></h3>
+                <span class="btn">Explore Profile</span>
+              </div>
+            </div>
+            <!-- Expanded card on hover -->
+            <div class="service-card-item">
+              <div class="services-image">
+                <img src="assets/images/room2.webp" alt="Hospitality Investors">
+                <div class="content">
+                  <h3><a href="services.html#feasibility">Hospitality Investors</a></h3>
+                  <p>Market research and financial feasibility assessments to validate hospitality concepts, evaluate
+                    investment returns, and protect invested capital.</p>
+                  <a href="services.html#feasibility" class="views-btn">
+                    <span>View Feasibility Advisory</span>
+                    <i data-lucide="arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Profile 3: Property Developers -->
+          <div class="service-main-item">
+            <!-- Collapsed card -->
+            <div class="service-item">
+              <div class="service-image">
+                <img src="assets/images/room3.webp" alt="Property Developers">
+              </div>
+              <div class="service-content">
+                <h3><a href="services.html#development">Property Developers</a></h3>
+                <span class="btn">Explore Profile</span>
+              </div>
+            </div>
+            <!-- Expanded card on hover -->
+            <div class="service-card-item">
+              <div class="services-image">
+                <img src="assets/images/room3.webp" alt="Property Developers">
+                <div class="content">
+                  <h3><a href="services.html#development">Property Developers</a></h3>
+                  <p>End-to-end development planning, architectural coordination, and operational requirement definition
+                    for new-build hospitality assets.</p>
+                  <a href="services.html#development" class="views-btn">
+                    <span>View Development Advisory</span>
+                    <i data-lucide="arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Profile 4: Heritage Hotels & Resorts -->
+          <div class="service-main-item">
+            <!-- Collapsed card -->
+            <div class="service-item">
+              <div class="service-image">
+                <img src="assets/images/room4.webp" alt="Heritage Hotels & Resorts">
+              </div>
+              <div class="service-content">
+                <h3><a href="services.html">Heritage Hotels &amp; Resorts</a></h3>
+                <span class="btn">Explore Profile</span>
+              </div>
+            </div>
+            <!-- Expanded card on hover -->
+            <div class="service-card-item">
+              <div class="services-image">
+                <img src="assets/images/room4.webp" alt="Heritage Hotels & Resorts">
+                <div class="content">
+                  <h3><a href="services.html">Heritage Hotels &amp; Resorts</a></h3>
+                  <p>Specialised advisory respecting historic architecture and unique destination character while
+                    establishing modern guest service standards.</p>
+                  <a href="services.html" class="views-btn">
+                    <span>View Heritage Advisory</span>
+                    <i data-lucide="arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Profile 5: Banquet & Event Venues -->
+          <div class="service-main-item">
+            <!-- Collapsed card -->
+            <div class="service-item">
+              <div class="service-image">
+                <img src="assets/images/room5.webp" alt="Banquet & Event Venues">
+              </div>
+              <div class="service-content">
+                <h3><a href="services.html#food-beverage">Banquet &amp; Event Venues</a></h3>
+                <span class="btn">Explore Profile</span>
+              </div>
+            </div>
+            <!-- Expanded card on hover -->
+            <div class="service-card-item">
+              <div class="services-image">
+                <img src="assets/images/room5.webp" alt="Banquet & Event Venues">
+                <div class="content">
+                  <h3><a href="services.html#food-beverage">Banquet &amp; Event Venues</a></h3>
+                  <p>Operational planning for large-format banqueting, back-of-house service flow, kitchen coordination,
+                    and high-volume event execution.</p>
+                  <a href="services.html#food-beverage" class="views-btn">
+                    <span>View Venue Advisory</span>
+                    <i data-lucide="arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 6: HOW WE WORK (4-Stage Engagement Process)
+         ==================================================================== -->
+    <section class="section-padding bg-ivory">
+      <div class="container">
+
+        <div class="section-title text-center">
+          <span class="sub-title">Methodology</span>
+          <h2>A Clear Process. Practical Recommendations.</h2>
+          <p class="section-desc">
+            Our consulting methodology begins with in-depth business immersion and progresses toward evidence-based
+            recommendations and agreed implementation support.
+          </p>
+        </div>
+
+        <div class="process-grid-4col">
+          <div class="process-card">
+            <span class="process-num">01</span>
+            <h3>Understand</h3>
+            <p>We clarify business objectives, property context, budget constraints, timeline expectations, and core
+              decision parameters.</p>
+          </div>
+
+          <div class="process-card">
+            <span class="process-num">02</span>
+            <h3>Assess</h3>
+            <p>We review market data, competitive dynamics, financial projections, operational requirements, and
+              physical property characteristics.</p>
+          </div>
+
+          <div class="process-card">
+            <span class="process-num">03</span>
+            <h3>Recommend</h3>
+            <p>We deliver practical, structured options, priority actions, risk mitigation strategies, and an agreed
+              strategic path forward.</p>
+          </div>
+
+          <div class="process-card">
+            <span class="process-num">04</span>
+            <h3>Support</h3>
+            <p>We assist with project coordination, milestone reviews, partner negotiations, and implementation
+              monitoring within defined scope.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 7: LEADERSHIP SPOTLIGHT (Compact Preview)
+         ==================================================================== -->
+    <section class="leadership-compact-section bg-white border-top-bottom">
+      <div class="container">
+        <div class="leader-compact-card">
+          <div class="leader-compact-left">
+            <span class="sub-title">Leadership &amp; Credentials</span>
+            <h2 class="leader-compact-title">Led by Strategic Global Thinking &amp; Operational Reality</h2>
+            <p class="leader-compact-desc">
+              Innspira Hospitality LLP was founded by <strong>Kshitij Singh</strong> (M.Com Global Business &amp; Analytics, UNSW Sydney &bull; IHM Ahmedabad), combining postgraduate international business research with executive leadership across premier hotel properties.
+            </p>
+          </div>
+          <div class="leader-compact-right">
+            <a href="about.html#team" class="btn-hero-primary leader-compact-btn">
+              <span>Meet Our Team</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 8: PERSPECTIVES & INSIGHTS PREVIEW
+         ==================================================================== -->
+    <section class="section-padding bg-ivory">
+      <div class="container">
+
+        <div class="section-header-flex">
+          <div>
+            <span class="sub-title">Industry Perspectives</span>
+            <h2>Perspectives on Hospitality Development</h2>
+            <p class="section-desc">Explore practical considerations in hotel investment, pre-opening preparation, and
+              brand affiliation models.</p>
+          </div>
+          <a href="insights.html" class="service-item-link section-header-link">
+            <span>Explore All Insights</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="insights-grid">
+
+          <!-- Article 1 -->
+          <div class="insight-card">
+            <div class="insight-body">
+              <span class="insight-category">Hotel Investment</span>
+              <h3>Planning a Hotel Investment: Questions to Consider</h3>
+              <p>Explore key market dynamics, positioning strategies, and commercial factors that influence hospitality
+                investment decisions and risk profiles.</p>
+            </div>
+            <div class="insight-footer">
+              <a href="insights.html" class="insight-link">
+                <span>Read Topic</span>
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Article 2 -->
+          <div class="insight-card">
+            <div class="insight-body">
+              <span class="insight-category">Pre-Opening Planning</span>
+              <h3>Preparing a Hospitality Property for Opening</h3>
+              <p>Understand how pre-opening planning helps organise departmental requirements, timelines, critical
+                milestones, and team readiness.</p>
+            </div>
+            <div class="insight-footer">
+              <a href="insights.html" class="insight-link">
+                <span>Read Topic</span>
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Article 3 -->
+          <div class="insight-card">
+            <div class="insight-body">
+              <span class="insight-category">Brand Affiliation</span>
+              <h3>Hotel Brand Affiliation: Understanding Your Options</h3>
+              <p>Review essential considerations when comparing branded hotel networks with independent operating models
+                for commercial properties.</p>
+            </div>
+            <div class="insight-footer">
+              <a href="insights.html" class="insight-link">
+                <span>Read Topic</span>
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 9: CALL TO ACTION BANNER
+         ==================================================================== -->
+    <section class="cta-section">
+      <div class="container cta-container">
+        <h2>Planning Your Next Hospitality Project?</h2>
+        <p>Discuss your objectives with Innspira Hospitality LLP and explore practical, independent advisory support
+          tailored to your project.</p>
+        <a href="contact.html" class="btn-cta-gold">
+          <span>Request a Consultation</span>
+          <i data-lucide="arrow-right"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       GLOBAL FOOTER
+       ==================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Col 1: Brand & Bio -->
+        <div>
+          <div class="footer-logo-badge">
+            <img src="assets/images/logo.png" alt="Innspira Hospitality Logo">
+          </div>
+          <p class="footer-about-text">
+            Innspira Hospitality LLP provides practical hospitality consulting and advisory support for hotel owners,
+            investors, and developers across India and international markets.
+          </p>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="projects.html">Our Projects</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Information -->
+        <div>
+          <h4 class="footer-heading">Information</h4>
+          <ul class="footer-links-list">
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <div class="footer-contact-info">
+            <p>Phone: <a href="tel:+919140299074">+91 91402 99074</a></p>
+            <p>Email: <a href="mailto:info@InnspiraHospitality.com">info@InnspiraHospitality.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Copyright -->
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 Innspira Hospitality LLP. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
