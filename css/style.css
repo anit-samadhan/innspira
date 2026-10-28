@@ -2177,6 +2177,16 @@ ul li {
   align-items: flex-end;
 }
 
+.items-stretch {
+  align-items: stretch;
+}
+
+@media (min-width: 1024px) {
+  .lg\:items-stretch {
+    align-items: stretch;
+  }
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -4132,4 +4142,225 @@ textarea:focus {
     grid-template-columns: 1fr;
     gap: 16px;
   }
+}
+
+/* ==========================================================================
+   ABOUT US: EQUAL HEIGHT CORPORATE OVERVIEW SECTION
+   ========================================================================== */
+.corporate-overview-grid {
+  align-items: stretch !important;
+}
+
+.corporate-overview-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(197, 160, 89, 0.35);
+  box-shadow: 0 16px 40px rgba(7, 19, 31, 0.08);
+  background-color: var(--primary-blue);
+}
+
+.corporate-overview-img-wrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.6s ease;
+}
+
+.corporate-overview-img-wrap:hover img {
+  transform: scale(1.03);
+}
+
+@media (max-width: 1023px) {
+  .corporate-overview-img-wrap {
+    min-height: 320px;
+    height: 360px;
+  }
+}
+
+/* ==========================================================================
+   ABOUT US: MISSION & VISION PURPOSE CARDS WITH IMAGERY
+   ========================================================================== */
+.purpose-card {
+  background-color: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(7, 19, 31, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.35s ease;
+}
+
+.purpose-card:hover {
+  border-color: var(--border-gold);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(7, 19, 31, 0.1);
+}
+
+.purpose-card-media {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background-color: var(--primary-blue);
+}
+
+.purpose-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.purpose-card:hover .purpose-card-media img {
+  transform: scale(1.05);
+}
+
+.purpose-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: rgba(11, 29, 42, 0.9);
+  color: var(--gold);
+  border: 1px solid var(--border-gold);
+  padding: 6px 14px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+}
+
+.purpose-card-content {
+  padding: 32px 36px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==========================================================================
+   ABOUT US: LEADERSHIP VERIFIED PROPERTIES VISUAL PREVIEW
+   ========================================================================== */
+.team-portfolio-preview {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-light);
+}
+
+.team-portfolio-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.team-portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.team-portfolio-item {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  background-color: var(--primary-blue);
+  box-shadow: 0 2px 8px rgba(7, 19, 31, 0.04);
+}
+
+.team-portfolio-item img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.team-portfolio-item:hover img {
+  transform: scale(1.08);
+}
+
+.team-portfolio-item span {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--primary-blue);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 6px 8px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+/* ==========================================================================
+   HOMEPAGE & INSIGHTS: ARTICLE IMAGERY CARDS
+   ========================================================================== */
+.insight-media {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: var(--primary-blue);
+}
+
+.insight-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.insight-card:hover .insight-media img {
+  transform: scale(1.05);
+}
+
+.luxury-card-media {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: var(--primary-blue);
+  border-radius: 4px 4px 0 0;
+}
+
+.luxury-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.luxury-card:hover .luxury-card-media img {
+  transform: scale(1.05);
+}
+
+.luxury-card-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(11, 29, 42, 0.88);
+  color: var(--gold);
+  border: 1px solid var(--border-gold);
+  padding: 4px 10px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border-radius: 3px;
+  backdrop-filter: blur(4px);
 }

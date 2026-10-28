@@ -117,8 +117,8 @@
     <!-- SECTION 2: About the Company -->
     <section class="py-20 lg:py-28 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          <div class="lg:col-span-7 space-y-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 corporate-overview-grid lg:items-stretch">
+          <div class="lg:col-span-7 space-y-6 flex flex-col justify-center">
             <span class="sub-title">Corporate Overview</span>
             <h2>
               Hospitality Advisory Grounded in Practical Thinking
@@ -148,10 +148,9 @@
             </div>
           </div>
 
-          <div class="lg:col-span-5">
-            <div class="relative overflow-hidden shadow-xl border border-gold/30">
-              <img src="assets/images/06.jpg" alt="Innspira Advisory Team Presenting Strategic Recommendations"
-                class="w-full h-full object-cover">
+          <div class="lg:col-span-5 flex flex-col h-full">
+            <div class="corporate-overview-img-wrap">
+              <img src="assets/images/06.jpg" alt="Innspira Advisory Team Presenting Strategic Recommendations">
             </div>
           </div>
         </div>
@@ -169,22 +168,34 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="bg-white p-8 sm:p-10 border border-light-border shadow-sm">
-            <div class="w-10 h-0.5 bg-gold mb-5"></div>
-            <h3 class="mb-3">Our Mission</h3>
-            <p class="text-sm text-dark-text leading-relaxed mb-6">
-              "To provide practical, research-informed hospitality consulting that helps hotel owners, investors, and
-              developers make sound commercial decisions and build resilient hospitality businesses."
-            </p>
+          <div class="purpose-card">
+            <div class="purpose-card-media">
+              <img src="assets/images/banner/02.jpg" alt="Innspira Hospitality Advisory Mission">
+              <span class="purpose-badge">Our Mission</span>
+            </div>
+            <div class="purpose-card-content">
+              <div class="w-10 h-0.5 bg-gold mb-5"></div>
+              <h3 class="mb-3">Our Mission</h3>
+              <p class="text-sm text-dark-text leading-relaxed mb-6">
+                "To provide practical, research-informed hospitality consulting that helps hotel owners, investors, and
+                developers make sound commercial decisions and build resilient hospitality businesses."
+              </p>
+            </div>
           </div>
 
-          <div class="bg-white p-8 sm:p-10 border border-light-border shadow-sm">
-            <div class="w-10 h-0.5 bg-navy mb-5"></div>
-            <h3 class="mb-3">Our Vision</h3>
-            <p class="text-sm text-dark-text leading-relaxed mb-6">
-              "To become a trusted hospitality advisory partner recognized across India and international markets for
-              professional integrity, thoughtful analysis, and enduring contributions to hospitality excellence."
-            </p>
+          <div class="purpose-card">
+            <div class="purpose-card-media">
+              <img src="assets/images/banner/04.jpg" alt="Innspira Enduring Hospitality Excellence Vision">
+              <span class="purpose-badge">Our Vision</span>
+            </div>
+            <div class="purpose-card-content">
+              <div class="w-10 h-0.5 bg-navy mb-5"></div>
+              <h3 class="mb-3">Our Vision</h3>
+              <p class="text-sm text-dark-text leading-relaxed mb-6">
+                "To become a trusted hospitality advisory partner recognized across India and international markets for
+                professional integrity, thoughtful analysis, and enduring contributions to hospitality excellence."
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -319,6 +330,25 @@
                   <span><strong>Professional Experience &amp; Projects</strong> — Managing Director at The Gauri Hotels and Resorts &bull; Operations Training at Taj Palace, New Delhi &bull; Guest Experience Consulting for Raffles Jakarta (UNSW Project) &bull; Strategy Consulting for Aurecon &amp; Transgrid</span>
                 </li>
               </ul>
+
+              <!-- Verified Properties Visual Preview -->
+              <div class="team-portfolio-preview">
+                <span class="team-portfolio-label">Executive Leadership &amp; Project Exposure:</span>
+                <div class="team-portfolio-grid">
+                  <div class="team-portfolio-item">
+                    <img src="assets/images/room1.jpg" alt="Raffles Jakarta Guest Experience Consulting" loading="lazy">
+                    <span>Raffles Jakarta</span>
+                  </div>
+                  <div class="team-portfolio-item">
+                    <img src="assets/images/room2.jpg" alt="The Gauri Hotels and Resorts Managing Director" loading="lazy">
+                    <span>The Gauri Hotels</span>
+                  </div>
+                  <div class="team-portfolio-item">
+                    <img src="assets/images/room3.jpg" alt="Taj Palace New Delhi Hotel Operations Training" loading="lazy">
+                    <span>Taj Palace New Delhi</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
